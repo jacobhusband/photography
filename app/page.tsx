@@ -16,7 +16,9 @@ export default function Page() {
       <main className="grow">
         <Navbar />
       </main>
-      <footer className="h-[60px]">Placeholder for footer</footer>
+      <footer className="h-[60px] flex justify-center items-center">
+        HCO Furniture
+      </footer>
     </div>
   );
 }

@@ -27,7 +27,7 @@ const tabs = [
 
 export default function Navbar() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center h-full">
       <Tab.Group>
         <Tab.List className="flex items-center gap-12">
           {tabs.map((tab) => (
@@ -40,8 +40,8 @@ export default function Navbar() {
             </Tab>
           ))}
         </Tab.List>
-        <Tab.Panels>
-          <Tab.Panel>Images for gallery</Tab.Panel>
+        <Tab.Panels className="h-full bg-stone-100 bg-opacity-80 max-w-[900px] w-full p-2 sm:p-4 my-6">
+          <Tab.Panel className=" h-full">Images for gallery</Tab.Panel>
           <Tab.Panel>
             Browser insert for facebook marketplace inventory
           </Tab.Panel>
