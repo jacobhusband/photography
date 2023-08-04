@@ -1,6 +1,7 @@
 "use client";
 
 import { Tab } from "@headlessui/react";
+import Content from "./content";
 
 const tabs = [
   {
@@ -40,15 +41,7 @@ export default function Navbar() {
             </Tab>
           ))}
         </Tab.List>
-        <Tab.Panels className="h-full bg-stone-100 bg-opacity-80 max-w-[900px] w-full p-2 sm:p-4 my-6">
-          <Tab.Panel className=" h-full">Images for gallery</Tab.Panel>
-          <Tab.Panel>
-            Browser insert for facebook marketplace inventory
-          </Tab.Panel>
-          <Tab.Panel>Contact information</Tab.Panel>
-          <Tab.Panel>About information</Tab.Panel>
-          <Tab.Panel>FAQ information</Tab.Panel>
-        </Tab.Panels>
+        <Content />
       </Tab.Group>
     </div>
   );
