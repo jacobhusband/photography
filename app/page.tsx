@@ -5,10 +5,12 @@ export default function Page() {
   return (
     <div className="h-full overflow-auto">
       <header className="fixed w-full top-0 z-10 flex justify-between items-center h-[90px] px-6">
-        <div>HCO Furniture</div>
+        <span className="uppercase font-bold text-sm sm:text-base lg:text-lg">
+          HCO Furniture
+        </span>
         <Link
           href="#"
-          className="rounded-3xl bg-black text-stone-200 px-3 py-2 hover:bg-opacity-90"
+          className="rounded-3xl bg-black text-stone-200 px-3 py-2 hover:bg-opacity-90 text-sm sm:text-base lg:text-lg"
         >
           Get in touch
         </Link>
@@ -16,7 +18,7 @@ export default function Page() {
       <main className="pt-[100px]">
         <Navbar />
       </main>
-      <footer className="h-[60px] flex justify-center items-center">
+      <footer className="h-[90px] flex justify-center items-center uppercase font-medium text-sm sm:text-base lg:text-lg">
         HCO Furniture
       </footer>
     </div>
