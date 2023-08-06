@@ -57,11 +57,11 @@ export default function Content() {
           Check out our inventory on facebook marketplace.
         </p>
         <div className="flex justify-center">
-          <div className="p-2 bg-stone-100 rounded hover:opacity-90 cursor-pointer">
-            <div
-              className="flex justify-center w-[200px] sm:w-[250px] lg:w-[300px]"
-              onClick={handleClick}
-            >
+          <div
+            className="p-2 bg-stone-100 rounded hover:opacity-90 cursor-pointer"
+            onClick={handleClick}
+          >
+            <div className="flex justify-center w-[200px] sm:w-[250px] lg:w-[300px]">
               <Image
                 className="rounded-lg"
                 src={profile}

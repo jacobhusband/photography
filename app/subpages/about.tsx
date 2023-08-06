@@ -33,8 +33,8 @@ export default function About() {
         test before you buy! We also offer free delivery to all Orange County
         Residents! (Delivery to surrounding counties as well for an added fee).
         If you live in Southern California and need high quality furniture but
-        don't want to break the bank to furnish your living space, then you came
-        to the right place!
+        don&apos;t want to break the bank to furnish your living space, then you
+        came to the right place!
       </p>
       <br></br>
     </div>

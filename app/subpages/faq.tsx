@@ -33,7 +33,7 @@ export default function FAQ() {
     <>
       {questions.map((q, i) => {
         return (
-          <Disclosure>
+          <Disclosure key={i}>
             <Disclosure.Button className="py-2 bg-slate-100 w-full text-left px-2 hover:opacity-90">
               {q}
             </Disclosure.Button>
