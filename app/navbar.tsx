@@ -2,6 +2,7 @@
 
 import { Tab } from "@headlessui/react";
 import Content from "./content";
+import { StaticImageData } from "next/image";
 
 const tabs_1 = [
   {
@@ -29,7 +30,11 @@ const tabs_2 = [
   },
 ];
 
-export default function Navbar() {
+interface NavbarProps {
+  images: StaticImageData[];
+}
+
+const Navbar: React.FC<NavbarProps> = ({ images }) => {
   return (
     <div className="flex flex-col items-center h-full">
       <Tab.Group>
@@ -63,8 +68,10 @@ export default function Navbar() {
             ))}
           </Tab.List>
         </div>
-        <Content />
+        <Content images={images} />
       </Tab.Group>
     </div>
   );
-}
+};
+
+export default Navbar;

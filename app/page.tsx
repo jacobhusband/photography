@@ -3,6 +3,8 @@ import Navbar from "./navbar";
 import Image from "next/image";
 import Logo from "/public/logo.webp";
 
+import sofaImages from "./components/sofa_import";
+
 export default function Page() {
   return (
     <div className="h-full overflow-auto flex flex-col ">
@@ -24,7 +26,7 @@ export default function Page() {
         </Link>
       </header>
       <main className="pt-[110px] sm:pt-[130px] lg:pt-[150px] flex flex-col grow">
-        <Navbar />
+        <Navbar images={sofaImages} />
       </main>
 
       <footer className="h-[90px] flex justify-center items-center uppercase font-medium text-sm sm:text-base lg:text-lg shrink-0">

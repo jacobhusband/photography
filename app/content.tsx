@@ -18,13 +18,13 @@ import { GalleryItem } from "lightgallery/lg-utils";
 
 import FAQ from "./subpages/faq";
 import About from "./subpages/about";
-
-import sofaImages from "./components/sofa_import";
 import profile from "/public/fb_marketplace.jpg";
 
-const sofaSources: GalleryItem[] = sofaImages.map((sofa) => {
-  return { src: sofa.src, thumb: sofa.src };
-});
+import { StaticImageData } from "next/image";
+
+interface NavbarProps {
+  images: StaticImageData[];
+}
 
 const breakpointColumnsObj = {
   default: 3,
@@ -39,8 +39,12 @@ const handleClick = () => {
   );
 };
 
-export default function Content() {
+const Content: React.FC<NavbarProps> = ({ images }) => {
   const lightboxRef = useRef<LightGallery | null>(null);
+
+  const sofaSources: GalleryItem[] = images.map((sofa) => {
+    return { src: sofa.src, thumb: sofa.src };
+  });
 
   return (
     <Tab.Panels className="h-full bg-opacity-80 max-w-[1200px] w-full p-2 sm:p-4">
@@ -82,7 +86,7 @@ export default function Content() {
           {sofaSources.map((sofa, index) => (
             <Image
               key={sofa.src}
-              src={sofaImages[index]}
+              src={images[index]}
               placeholder="blur"
               className="mt-4 hover:opacity-90 cursor-pointer rounded"
               alt="sofa"
@@ -119,4 +123,6 @@ export default function Content() {
       </Tab.Panel>
     </Tab.Panels>
   );
-}
+};
+
+export default Content;
