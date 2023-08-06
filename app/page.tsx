@@ -1,32 +1,22 @@
-import Link from "next/link";
-import Navbar from "./navbar";
-import Image from "next/image";
-import Logo from "/public/logo.webp";
+"use client";
 
+import { useState } from "react";
+import Navbar from "./components/navbar";
 import sofaImages from "./components/sofa_import";
+import Header from "./components/header";
 
 export default function Page() {
+  const [indexSelected, setIndexSelected] = useState(0);
+
   return (
     <div className="h-full overflow-auto flex flex-col ">
-      <header
-        className="fixed w-full top-0 z-10 flex justify-between items-center h-[90px] px-2 sm:px-4 lg:px-6 bg-opacity-20 bg-zinc-300 backdrop-blur-sm"
-        id="section-0"
-      >
-        <div className="flex items-center gap-2">
-          <Image src={Logo} alt="hco-logo" width={70} height={70}></Image>
-          <span className="uppercase font-bold text-base sm:text-lg lg:text-xl">
-            HCO Furniture
-          </span>
-        </div>
-        <Link
-          href="#"
-          className="rounded-3xl bg-black text-stone-200 px-3 py-2 hover:bg-opacity-90 text-sm sm:text-base lg:text-lg"
-        >
-          Get in touch
-        </Link>
-      </header>
+      <Header setIndexSelected={setIndexSelected} />
       <main className="pt-[110px] sm:pt-[130px] lg:pt-[150px] flex flex-col grow">
-        <Navbar images={sofaImages} />
+        <Navbar
+          images={sofaImages}
+          indexSelected={indexSelected}
+          setIndexSelected={setIndexSelected}
+        />
       </main>
 
       <footer className="h-[90px] flex justify-center items-center uppercase font-medium text-sm sm:text-base lg:text-lg shrink-0">
