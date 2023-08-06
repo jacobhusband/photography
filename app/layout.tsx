@@ -1,7 +1,7 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Advent_Pro } from "next/font/google";
 
-const inter = Inter({
+const inter = Advent_Pro({
   subsets: ["latin"],
   variable: "--font-inter",
 });
