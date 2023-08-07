@@ -13,7 +13,7 @@ export default function About() {
         placeholder="blur"
         className="py-1"
       ></Image>
-      <p>
+      <p className="text-lg">
         HCO Furniture is an online refurbished furniture store that offers
         couches, dining tables and mattresses. We serve Orange County and
         surrounding counties in Southern California. A family business, HCO or
@@ -22,13 +22,13 @@ export default function About() {
         highest quality, yet affordable furniture to our local community.
       </p>
       <br></br>
-      <p>
+      <p className="text-lg">
         We strive to make the furniture sales process as easy and transparent as
         possible. All of our listings will show exactly what you will get with
         high quality photos and accompanying video tours.
       </p>
       <br></br>
-      <p>
+      <p className="text-lg">
         In person tours of the furniture is also available so you can see and/or
         test before you buy! We also offer free delivery to all Orange County
         Residents! (Delivery to surrounding counties as well for an added fee).

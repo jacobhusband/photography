@@ -19,7 +19,7 @@ export default function Page() {
         />
       </main>
 
-      <footer className="h-[90px] flex justify-center items-center uppercase font-medium text-sm sm:text-base lg:text-lg shrink-0">
+      <footer className="h-[90px] flex justify-center items-center font-medium text-sm sm:text-base lg:text-lg shrink-0">
         <div className="flex-col lg:w-[1200px] px-6">
           <div className="flex text-center flex-wrap justify-center">
             <span className="mr-2">
@@ -34,6 +34,9 @@ export default function Page() {
               Laguna Niguel, CA 92677
             </span>
           </div>
+          <p className="text-center">
+            &copy; {new Date().getFullYear()} HCOFurniture. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>

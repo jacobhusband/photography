@@ -30,6 +30,7 @@ const Gallery: React.FC<NavbarProps> = ({ images }) => {
 
   return (
     <>
+      <p className="text-center text-lg font-semibold mb-2">Sold Items</p>
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className="flex gap-4"
@@ -40,7 +41,7 @@ const Gallery: React.FC<NavbarProps> = ({ images }) => {
             key={sofa.src}
             src={images[index]}
             placeholder="blur"
-            className="mt-4 hover:opacity-90 cursor-pointer rounded"
+            className="mb-4 hover:opacity-90 cursor-pointer rounded"
             alt="sofa"
             sizes="(max-width: 640px) 100vw,
                     (max-width: 1024px) 50vw,
