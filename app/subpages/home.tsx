@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HCO from "/public/HCO.webp";
+import logo from "/public/logo.webp";
 
 const handleClick = () => {
   var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
@@ -44,7 +44,7 @@ export default function Home() {
           <div className="flex justify-center w-[200px] sm:w-[250px] lg:w-[300px]">
             <Image
               className="rounded-lg"
-              src={HCO}
+              src={logo}
               alt="tyler husband facebook profile picture"
               placeholder="blur"
             ></Image>
