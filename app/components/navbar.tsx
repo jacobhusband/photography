@@ -43,11 +43,11 @@ const Navbar: React.FC<NavbarProps> = ({
     <div className="flex flex-col items-center h-full">
       <Tab.Group selectedIndex={indexSelected}>
         <div className="flex flex-wrap justify-center mx-12 gap-2">
-          <Tab.List className="flex items-center text-sm sm:text-lg lg:text-xl">
+          <Tab.List className="flex items-center text-sm sm:text-lg lg:text-xl mb-5">
             {tabs.map((tab, i) => (
               <Tab
                 key={tab.key}
-                className="p-2 uppercase font-semibold hover:opacity-70 bg-stone-50 border-solid border-2 rounded"
+                className="p-2 font-semibold hover:opacity-70 bg-stone-50 border-solid border-2 rounded"
                 onClick={() => {
                   setIndexSelected(i);
                 }}

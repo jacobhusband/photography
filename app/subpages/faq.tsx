@@ -34,10 +34,10 @@ export default function FAQ() {
       {questions.map((q, i) => {
         return (
           <Disclosure key={i}>
-            <Disclosure.Button className="py-2 bg-slate-100 w-full text-left px-2 hover:opacity-90">
+            <Disclosure.Button className="py-2 bg-stone-100 w-full text-left px-2 hover:opacity-90 text-lg">
               {q}
             </Disclosure.Button>
-            <Disclosure.Panel className="text-gray-500 px-3 py-1">
+            <Disclosure.Panel className="text-gray-500 px-3 py-1 text-lg">
               {answers[i]}
             </Disclosure.Panel>
           </Disclosure>

@@ -25,15 +25,15 @@ const handleClick = () => {
 export default function Home() {
   return (
     <>
-      <p className="text-2xl text-center my-6 mx-2">
+      <p className="text-2xl text-center mb-6 mx-2">
         We are a resale furniture business located in Orange County, CA.
       </p>
-      <p className="text-2xl text-center my-6 mx-2">
+      <p className="text-2xl text-center mb-6 mx-2">
         We deliver furniture for{" "}
         <span className="font-semibold bg-yellow-100">FREE</span> within the OC
         and elsewhere for a fee.
       </p>
-      <p className="text-2xl text-center my-6 mx-2">
+      <p className="text-2xl text-center mb-4 mx-2">
         Check out our inventory on facebook marketplace.
       </p>
       <div className="flex justify-center">

@@ -30,7 +30,6 @@ const Gallery: React.FC<NavbarProps> = ({ images }) => {
 
   return (
     <>
-      <p className="text-center text-lg font-semibold mb-2">Sold Items</p>
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className="flex gap-4"
