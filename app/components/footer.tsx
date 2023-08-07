@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="h-[90px] flex justify-center items-center font-medium text-sm sm:text-base lg:text-lg shrink-0 mt-5 bg-stone-50">
+    <footer className="h-[90px] flex justify-center items-center font-medium text-sm sm:text-base lg:text-lg shrink-0 mt-5 bg-stone-50 pt-3">
       <div className="flex-col lg:w-[1200px] px-6">
         <div className="flex text-center flex-wrap justify-center">
           <span className="mr-2">
