@@ -1,9 +1,11 @@
 import "./globals.css";
-import { Advent_Pro } from "next/font/google";
+import { Noto_Sans_Balinese } from "next/font/google";
 
-const inter = Advent_Pro({
+const inter = Noto_Sans_Balinese({
+  weight: "400", // or any other allowed value
+  style: "normal", // or "italic" if needed
   subsets: ["latin"],
-  variable: "--font-inter",
+  // other properties as required
 });
 
 export const metadata = {
@@ -18,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans`}>{children}</body>
+      <body className={`${inter.className} font-sans`}>{children}</body>
     </html>
   );
 }

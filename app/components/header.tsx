@@ -14,6 +14,7 @@ const Header: React.FC<HeaderProps> = ({ setIndexSelected }) => {
         id="section-0"
       >
         <div className="flex items-center gap-2">
+          <Image src={logo} alt="hco-logo" width={70} height={70}></Image>
           <span className="uppercase font-bold text-base sm:text-lg lg:text-xl">
             HCO Furniture
           </span>

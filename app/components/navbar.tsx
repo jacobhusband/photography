@@ -5,7 +5,7 @@ import Content from "../content";
 import { StaticImageData } from "next/image";
 import { Dispatch, SetStateAction } from "react";
 
-const tabs_1 = [
+const tabs = [
   {
     key: "home",
     display: "Home",
@@ -14,9 +14,6 @@ const tabs_1 = [
     key: "gallery",
     display: "Gallery",
   },
-];
-
-const tabs_2 = [
   {
     key: "contact",
     display: "Contact",
@@ -46,30 +43,13 @@ const Navbar: React.FC<NavbarProps> = ({
     <div className="flex flex-col items-center h-full">
       <Tab.Group selectedIndex={indexSelected}>
         <div className="flex flex-wrap justify-center mx-12 gap-2">
-          <Tab.List className="flex items-center gap-12 sm:gap-2 text-base sm:text-lg lg:text-xl">
-            {tabs_1.map((tab, i) => (
+          <Tab.List className="flex items-center text-sm sm:text-lg lg:text-xl">
+            {tabs.map((tab, i) => (
               <Tab
                 key={tab.key}
-                className="p-2 uppercase font-semibold hover:opacity-70"
+                className="p-2 uppercase font-semibold hover:opacity-70 bg-stone-50 border-solid border-2 rounded"
                 onClick={() => {
                   setIndexSelected(i);
-                }}
-              >
-                {({ selected }) => (
-                  <span className={selected ? "text-stone-500" : "text-black"}>
-                    {tab.display}
-                  </span>
-                )}
-              </Tab>
-            ))}
-          </Tab.List>
-          <Tab.List className="flex items-center gap-12 sm:gap-2 text-base sm:text-lg lg:text-xl">
-            {tabs_2.map((tab, i) => (
-              <Tab
-                key={tab.key}
-                className="p-2 uppercase font-semibold hover:opacity-70"
-                onClick={() => {
-                  setIndexSelected(i + 2);
                 }}
               >
                 {({ selected }) => (

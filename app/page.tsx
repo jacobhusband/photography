@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <div className="h-full overflow-auto flex flex-col ">
       <Header setIndexSelected={setIndexSelected} />
-      <main className="pt-[110px] sm:pt-[130px] lg:pt-[150px] flex flex-col grow">
+      <main className="pt-[102px] flex flex-col grow">
         <Navbar
           images={sofaImages}
           indexSelected={indexSelected}
